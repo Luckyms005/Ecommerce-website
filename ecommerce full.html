@@ -1,0 +1,1198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your E-commerce Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    max-height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.social-media a {
+    color: #fff;
+    margin: 0 0.5rem;
+    text-decoration: none;
+}
+
+section {
+    padding: 2rem;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+footer .social-media a {
+    color: #fff;
+    margin: 0 0.5rem;
+    text-decoration: none;
+}
+/* General styles for the home section */
+.home-section {
+    padding: 2rem;
+    background-image: url('sale10.jpg'); /* Background image for the section */
+    background-size: cover; /* Cover the entire section */
+    background-position: center; /* Center the background image */
+    background-attachment: fixed; /* Fixed background image */
+    color: #fff; /* Ensure text is readable */
+}
+
+/* Hero section styling */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent background for readability */
+    padding: 2rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.cta-button {
+    background: #007bff;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.hero-image img {
+    max-width: 100%;
+    border-radius: 8px;
+    
+}
+
+/* Featured products section styling */
+.featured-products {
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent background for contrast */
+    padding: 2rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+.featured-products h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.product-grid {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.product-item {
+    flex: 1 1 calc(33.333% - 1rem); /* Three items per row */
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+}
+
+.product-item img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.product-item h3 {
+    font-size: 1.25rem;
+    margin: 0.5rem 0;
+}
+
+.product-item p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.view-details {
+    background: #007bff;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Promotions section styling */
+/* General styles for the home section */
+.home-section {
+    padding: 2rem;
+    background-color: #000; /* Black background */
+    color: #fff; /* Text color to stand out against the black background */
+}
+
+/* Hero section styling */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.8); /* Semi-transparent black background for readability */
+    padding: 2rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.cta-button {
+    background: #007bff;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.hero-image img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+/* Featured products section styling */
+.featured-products {
+    background: rgba(0, 0, 0, 0.8); /* Semi-transparent black background for contrast */
+    padding: 2rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+.featured-products h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.product-grid {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.product-item {
+    flex: 1 1 calc(33.333% - 1rem); /* Three items per row */
+    background:#3B3D45;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+}
+
+.product-item img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.product-item h3 {
+    font-size: 1.25rem;
+    margin: 0.5rem 0;
+}
+
+.product-item p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.view-details {
+    background: #007bff;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Promotions section styling */
+.promotions {
+   background-image: url(bggg3.jpg);
+    padding: 2rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+.promotions h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.promotion-grid {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.promotion-item {
+    flex: 1 1 calc(50% - 1rem); /* Two items per row */
+    background: transparent;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+}
+
+.promotion-item img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.promotion-item h3 {
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+}
+
+.promotion-item p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+/* About section styling */
+.about-section {
+    padding: 2rem;
+   background-image: url(bggg1.jpg);
+    color: #fff; /* Text color to stand out against the black background */
+    padding: 30px;
+}
+
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.about-text p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.about-image {
+    flex: 1;
+    text-align: center;
+}
+
+.about-image img {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(187, 39, 39, 0.3); /* Optional: Adds a shadow for depth */
+}
+/* Services section styling */
+.services-section {
+    padding: 2rem;
+   background-image: url(sale11.jpg);
+    color: #fff; /* Text color to stand out against the black background */
+}
+
+.services-content {
+    text-align: center;
+}
+
+.services-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.services-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.service-item {
+    flex: 1 1 calc(50% - 2rem); /* Two items per row */
+   background-image: url(bggg6.jpg);
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Optional: Adds a shadow for depth */
+}
+
+.service-item img {
+    max-width: 200px;
+    margin-bottom: 1rem;
+    
+}
+
+.service-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #000;
+}
+
+.service-item p {
+    font-size: 1.1rem;
+color: #000;
+}
+/* Pricing section styling */
+.pricing-section {
+    padding: 2rem;
+    background-color: #000; /* Black background to match your site’s theme */
+    color: #fff; /* Text color to stand out against the black background */
+}
+
+.pricing-content {
+    text-align: center;
+}
+
+.pricing-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.pricing-cards {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.pricing-card {
+    background: #333; /* Dark background for pricing cards */
+    border-radius: 8px;
+    padding: 2rem;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Optional: Adds a shadow for depth */
+    flex: 1 1 calc(33.333% - 2rem); /* Three cards per row */
+    margin-bottom: 2rem;
+}
+
+.pricing-card.featured {
+    background: #007bff; /* Highlighted card with different background color */
+
+}
+
+.pricing-card h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.price {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.price span {
+    font-size: 1rem;
+    color: #ddd; /* Slightly lighter color for the monthly text */
+}
+
+.features {
+    list-style-type: none;
+    padding: 0;
+    margin: 1rem 0;
+}
+
+.features li {
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+}
+
+.cta-button {
+    background: #007bff;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+}
+/* Blog section styling */
+.blog-section {
+    padding: 2rem;
+   
+    background-image: url(sale14.jpg);
+    color: #fff; /* Text color to stand out against the black background */
+}
+
+.blog-content {
+    text-align: center;
+}
+
+.blog-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.blog-grid {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.blog-post {
+    background: #7892AB; /* Dark background for blog posts */
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: left;
+    color: #fff;
+    flex: 1 1 calc(33.333% - 2rem); /* Three posts per row */
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Optional: Adds a shadow for depth */
+}
+
+.blog-post img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.blog-info {
+    padding: 1rem;
+}
+
+.blog-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.blog-info a {
+    color: #0a0a0a; /* Link color */
+    text-decoration: none;
+}
+
+.blog-info a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.date {
+    font-size: 1rem;
+    color: #ddd; /* Lighter color for the date */
+    margin-bottom: 1rem;
+}
+
+.blog-info p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.read-more {
+    background: #007bff;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+}
+/* Contact section styling */
+.contact-section {
+    padding: 2rem;
+  background-image: url(bggg.jpg);
+    color: #fff; /* Text color to stand out against the black background */
+}
+
+.contact-content {
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #000;
+}
+
+.contact-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #000;
+}
+
+.contact-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.contact-form, .contact-details {
+    background-image: url(bggg4.jpg);
+    border-radius: 8px;
+    padding: 2rem;
+    flex: 1 1 calc(50% - 2rem); /* Two columns */
+    max-width: 500px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #555;
+    border-radius: 5px;
+   background: transparent;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.form-group input::placeholder, .form-group textarea::placeholder {
+    color: #888;
+}
+
+.submit-button {
+    background: #007bff;
+    color: #fff;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background: #0056b3;
+}
+
+.contact-details h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.contact-details p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.social-links {
+    margin-top: 1rem;
+}
+
+.social-links a {
+    color: #007bff;
+    text-decoration: none;
+    margin-right: 1rem;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #0056b3;
+}
+/* Footer section styling */
+.footer-section {
+    padding: 2rem 1rem;
+    padding: 20px;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text color */
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+.footer-about,
+.footer-links,
+.footer-contact,
+.footer-newsletter {
+    flex: 1 1 calc(25% - 2rem); /* Four columns */
+    min-width: 250px; /* Ensure columns don’t get too narrow */
+}
+
+.footer-about h3,
+.footer-links h3,
+.footer-contact h3,
+.footer-newsletter h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.footer-about p,
+.footer-contact p,
+.footer-newsletter p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.footer-links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-links a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #0056b3;
+}
+
+.social-links a {
+    margin-right: 1rem;
+    font-size: 1.2rem;
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #0056b3;
+}
+
+.footer-newsletter form {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-newsletter input {
+    padding: 0.75rem;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background-color: #222;
+    color: #fff;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.footer-newsletter button {
+    padding: 0.75rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+.footer-newsletter button:hover {
+    background-color: #0056b3;
+}
+
+.footer-bottom {
+    padding: 1rem 0;
+    border-top: 1px solid #555;
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.footer-bottom p {
+    margin-bottom: 0.5rem;
+}
+
+.footer-bottom ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.footer-bottom a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-bottom a:hover {
+    color: #0056b3;
+}
+
+
+
+</style>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="logo1122.jpg.png" alt="Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="social-media">
+            <a href="https://www.facebook.com/"><i class='bx bxl-facebook'></i></a>
+            <a href="https://x.com/?lang=en"><i class='bx bxl-twitter'></i></a>
+            <a href="https://www.instagram.com/"><i class='bx bxl-instagram-alt'></i></a>
+            <a href="https://www.linkedin.com/"><i class='bx bxl-linkedin'></i></a>
+        </div>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="home-section">
+        <div class="hero">
+            <div class="hero-content">
+                <h1>Welcome to RangDePK</h1>
+                <p>Discover our exclusive collection of products that fit your style and needs. <br>
+                    RangDePK is an exciting e-commerce store that brings the vibrant colors and rich culture of Pakistan to your doorstep.</br>
+                </p>
+                <a href="#shop-now" class="cta-button">Shop Now</a>
+            </div>
+            <div class="hero-image">
+                <img src="brand.jpg" alt="Featured Products">
+            </div>
+        </div>
+    
+        <div class="featured-products">
+            <h2>Featured Products</h2>
+            <div class="product-grid">
+                <!-- Repeat this block for each product -->
+                <div class="product-item">
+                    <img src="ecom3.jpg" alt="Product 1">
+                    <h3>Product 1</h3>
+                    <p>$29.99</p>
+                    <a href="product-page.html" class="view-details">View Details</a>
+                </div>
+                <div class="product-item">
+                    <img src="ecom4.jpg" alt="Product 2">
+                    <h3>Product 2</h3>
+                    <p>$39.99</p>
+                    <a href="product-page.html" class="view-details">View Details</a>
+                </div>
+                <div class="product-item">
+                    <img src="ecom6.jpg" alt="Product 2">
+                    <h3>Product 3</h3>
+                    <p>$49.99</p>
+                    <a href="product-page.html" class="view-details">View Details</a>
+                </div>
+                <div class="product-item">
+                    <img src="ecom9.jpg" alt="Product 2">
+                    <h3>Product 4</h3>
+                    <p>$34.99</p>
+                    <a href="product-page.html" class="view-details">View Details</a>
+                </div>
+                <!-- Add more products as needed -->
+            </div>
+        </div>
+    
+        <div class="promotions">
+            <h2>Current Promotions</h2>
+            <div class="promotion-grid">
+                <div class="promotion-item">
+                    <img src="sale.jpg" alt="Promotion 1">
+                    <h3>Summer Sale - 50% Off</h3>
+                    <p>Limited time offer on selected items!</p>
+                    <a href="#shop-now" class="cta-button">Shop Now</a>
+                </div>
+                <div class="promotion-item">
+                    <img src="sale1.jpg" alt="Promotion 2">
+                    <h3>Buy One Get One Free</h3>
+                    <p>On all accessories. Don't miss out!</p>
+                    <a href="#shop-now" class="cta-button">Shop Now</a>
+                </div>
+                <!-- Add more promotions as needed -->
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="about-content">
+            <h2>About Us</h2>
+            <div class="about-text">
+                <p>
+                    Welcome to [Your Brand], where we bring you the finest selection of [products/services]. Founded in [Year], our mission is to [briefly describe your mission or values]. With a passion for [industry/field], we strive to provide [mention key aspects like quality, customer service, innovation].
+                </p>
+                <p>
+                    Our team is dedicated to ensuring that every [product/service] meets our high standards of quality and excellence. Whether you’re [describe target audience or specific needs you meet], we are here to support and exceed your expectations.
+                </p>
+                <p>
+                    Thank you for choosing [Your Brand]. We look forward to serving you and being part of your [describe experience or benefit].
+                </p>
+            </div>
+            <div class="about-image">
+                <img src="sale2.jpg" alt="About Us">
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="services-content">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <!-- Service Item 1 -->
+                <div class="service-item">
+                    <img src="sale3.jpg" alt="Service 1">
+                    <h3>Free Shipping</h3>
+                    <p>
+                        Enjoy free shipping on all orders over $50. We ensure fast and reliable delivery to your doorstep.
+                    </p>
+                </div>
+                <!-- Service Item 2 -->
+                <div class="service-item">
+                    <img src="page1.jpg" alt="Service 2">
+                    <h3>24/7 Customer Support</h3>
+                    <p>
+                        Our dedicated customer support team is available around the clock to assist you with any inquiries or issues.
+                    </p>
+                </div>
+                <!-- Service Item 3 -->
+                <div class="service-item">
+                    <img src="page2.jpg" alt="Service 3">
+                    <h3>Easy Returns</h3>
+                    <p>
+                        Hassle-free returns within 30 days. If you're not satisfied with your purchase, we make returns easy.
+                    </p>
+                </div>
+                <!-- Service Item 4 -->
+                <div class="service-item">
+                    <img src="page3.jpg" alt="Service 4">
+                    <h3>Secure Payments</h3>
+                    <p>
+                        We use the latest encryption technology to ensure that your payment information is safe and secure.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing-section">
+        <div class="pricing-content">
+            <h2>Our Pricing Plans</h2>
+            <div class="pricing-cards">
+                <!-- Pricing Card 1 -->
+                <div class="pricing-card">
+                    <h3>Basic Plan</h3>
+                    <p class="price">$19.99<span>/month</span></p>
+                    <ul class="features">
+                        <li>10 Products</li>
+                        <li>Basic Support</li>
+                        <li>Limited Storage</li>
+                    </ul>
+                    <a href="#signup" class="cta-button">Sign Up</a>
+                </div>
+                <!-- Pricing Card 2 -->
+                <div class="pricing-card featured">
+                    <h3>Standard Plan</h3>
+                    <p class="price">$49.99<span>/month</span></p>
+                    <ul class="features">
+                        <li>50 Products</li>
+                        <li>Priority Support</li>
+                        <li>1 GB Storage</li>
+                    </ul>
+                    <a href="#signup" class="ccta-button">Sign Up</a>
+                </div>
+                <!-- Pricing Card 3 -->
+                <div class="pricing-card">
+                    <h3>Premium Plan</h3>
+                    <p class="price">$99.99<span>/month</span></p>
+                    <ul class="features">
+                        <li>Unlimited Products</li>
+                        <li>24/7 Support</li>
+                        <li>10 GB Storage</li>
+                    </ul>
+                    <a href="#signup" class="cta-button">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Blog Section -->
+    <section id="blog" class="blog-section">
+        <div class="blog-content">
+            <h2>Our Blog</h2>
+            <div class="blog-grid">
+                <!-- Blog Post 1 -->
+                <article class="blog-post">
+                    <img src="sale4.jpg" alt="Blog Post 1">
+                    <div class="blog-info">
+                        <h3><a href="#blog-post1">How to Get the Most Out of Our Products</a></h3>
+                        <p class="date">September 15, 2024</p>
+                        <p>
+                            Discover tips and tricks on how to maximize the benefits of our products. From usage guides to expert recommendations, we've got you covered.
+                        </p>
+                        <a href="#blog-post1" class="read-more">Read More</a>
+                    </div>
+                </article>
+                <!-- Blog Post 2 -->
+                <article class="blog-post">
+                    <img src="sale5.jpg" alt="Blog Post 2">
+                    <div class="blog-info">
+                        <h3><a href="#blog-post2">The Latest Trends in E-Commerce</a></h3>
+                        <p class="date">August 30, 2024</p>
+                        <p>
+                            Stay ahead of the curve with our insights into the latest trends shaping the e-commerce industry. Learn what's new and what’s next.
+                        </p>
+                        <a href="#blog-post2" class="read-more">Read More</a>
+                    </div>
+                </article>
+                <!-- Blog Post 3 -->
+                <article class="blog-post">
+                    <img src="sale6.jpg" alt="Blog Post 3">
+                    <div class="blog-info">
+                        <h3><a href="#blog-post3">How We Ensure Product Quality</a></h3>
+                        <p class="date">August 25, 2024</p>
+                        <p>
+                            Learn about our rigorous quality assurance process and how we maintain high standards for every product we offer.
+                        </p>
+                        <a href="#blog-post3" class="read-more">Read More</a>
+                    </div>
+                </article>
+                <!-- Blog Post 4 -->
+            <article class="blog-post">
+                <img src="sale7.jpg" alt="Blog Post 4">
+                <div class="blog-info">
+                    <h3><a href="#blog-post4">The Impact of Sustainable Packaging</a></h3>
+                    <p class="date">August 20, 2024</p>
+                    <p>
+                        Explore how our commitment to sustainable packaging is helping to reduce waste and protect the environment.
+                    </p>
+                    <a href="#blog-post4" class="read-more">Read More</a>
+                </div>
+            </article>
+            <!-- Blog Post 5 -->
+            <article class="blog-post">
+                <img src="sale8.jpg" alt="Blog Post 5">
+                <div class="blog-info">
+                    <h3><a href="#blog-post5">Customer Success Stories</a></h3>
+                    <p class="date">August 15, 2024</p>
+                    <p>
+                        Read inspiring stories from customers who have transformed their lives and businesses with our products.
+                    </p>
+                    <a href="#blog-post5" class="read-more">Read More</a>
+                </div>
+            </article>
+            <!-- Blog Post 6 -->
+            <article class="blog-post">
+                <img src="sale9.jpg" alt="Blog Post 6">
+                <div class="blog-info">
+                    <h3><a href="#blog-post6">The Future of Online Shopping</a></h3>
+                    <p class="date">August 10, 2024</p>
+                    <p>
+                        Get a glimpse into the future of online shopping and how we are preparing to lead the way in innovation and customer experience.
+                    </p>
+                    <a href="#blog-post6" class="read-more">Read More</a>
+                </div>
+            </article>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="contact-content">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or need assistance, feel free to reach out to us. We're here to help!</p>
+    
+            <div class="contact-grid">
+                <!-- Contact Form -->
+                <div class="contact-form">
+                    <form action="#" method="POST">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-button">Send Message</button>
+                    </form>
+                </div>
+    
+                <!-- Contact Details -->
+                <div class="contact-details">
+                    <h3>Get in Touch</h3>
+                    <p><strong>Email:</strong> msufyanm554@yourecommerce.com</p>
+                    <p><strong>Phone:</strong> +92 3270602130</p>
+                    <p><strong>Address:</strong> 123 E-commerce St., Suite 456, multan, pakistan</p>
+    
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/yourprofile" target="_blank">Instagram</a>
+                        <a href="https://www.facebook.com/yourprofile" target="_blank">Facebook</a>
+                        <a href="https://twitter.com/yourprofile" target="_blank">Twitter</a>
+                        <a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Footer -->
+    <footer class="footer-section">
+        <div class="footer-content">
+            <div class="footer-grid">
+                <!-- About Section -->
+                <div class="footer-about">
+                    <h3>About Us</h3>
+                    <p>We are a leading e-commerce platform providing top-quality products and exceptional customer service. Our mission is to make online shopping easy, convenient, and secure.</p>
+                </div>
+    
+                <!-- Quick Links -->
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Contact Info -->
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <p><strong>Email:</strong> msufyanm554@yourecommerce.com</p>
+                    <p><strong>Phone:</strong> +1 (555) 123-4567</p>
+                    <p><strong>Address:</strong> 123 E-commerce St., Suite 456, City, Country</p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/yourprofile" target="_blank">Instagram</a>
+                        <a href="https://www.facebook.com/yourprofile" target="_blank">Facebook</a>
+                        <a href="https://twitter.com/yourprofile" target="_blank">Twitter</a>
+                        <a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+                    </div>
+                </div>
+    
+                <!-- Newsletter Signup -->
+                <div class="footer-newsletter">
+                    <h3>Newsletter</h3>
+                    <p>Sign up for our newsletter to get the latest updates, promotions, and offers.</p>
+                    <form action="#" method="POST">
+                        <input type="email" name="email" placeholder="Enter your email" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <p>&copy; 2024 Your RangDePK. All rights reserved.</p>
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Refund Policy</a></li>
+            </ul>
+        </div>
+    </footer>
+    
+</body>
+</html>
